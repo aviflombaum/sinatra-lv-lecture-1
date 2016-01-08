@@ -1,0 +1,7 @@
+<h1>Favorites</h1>
+
+<ol>
+  <% @favorites.each do |post| %>
+  <li><a href="/posts/<%= post.id %>"><%= post.title %></a></li>
+  <% end %>
+</ol>
